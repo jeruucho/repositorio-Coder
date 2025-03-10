@@ -4,7 +4,11 @@ body{background-color: rgba(140, 240, 106, 0.659);}
 margin: 20px;
 color: rgb(0, 0, 0);}
 
-.encabezados{color: rgb(0, 0, 0);text-align: center;font-style: italic;}
+.encabezados{color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;}
+
 .redes {margin: 5px;
         font-size: 18px;
         margin-left: -1cm; }
@@ -27,9 +31,6 @@ img{display: block;
 h2{ text-decoration: underline;
     text-align: center;}
 h3{text-decoration: underline;}
-
-
-
 
 
 /* Media query para tabletas */
