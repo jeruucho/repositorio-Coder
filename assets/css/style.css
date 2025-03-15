@@ -3,9 +3,7 @@
     box-sizing: border-box;
 }
 body{background-color: rgba(223, 221, 221, 0.867);
-
 }
-
 
 #titulo {
     text-decoration: underline;
@@ -21,6 +19,7 @@ body{background-color: rgba(223, 221, 221, 0.867);
     font-size: 25px;
     text-decoration: underline;
     background-color: rgba(95, 197, 47, 0.504);
+    margin: 15px;
 }
 
 .redes{
@@ -50,14 +49,19 @@ h3{
 p{
     font-size: 17px;
 }
-
 .container {
     width: 70vw;
     max-width: 1000px;
     min-width: 320px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+}
+
+.proyecto2 {
+    justify-content: space-between;
+    height: 250px;
+    width: 350px;
 }
 
 iframe{
@@ -95,14 +99,16 @@ img {
     background-color: rgba(95, 197, 47, 0.504);
     padding: 10px;
 }
-.box-footer{
-    position: sticky;
+
+footer{
+    position: relative;
     top: 20px;
     background-color: rgb(189, 193, 193);
     padding: 10px;
     text-align: center;
     width: auto;
 }
+
 /* Media para tabletas */
 @media (min-width: 600px) {
     body {
