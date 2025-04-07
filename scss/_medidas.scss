@@ -1,0 +1,78 @@
+/*Media para movil*/
+@media (min-width: 320px) {
+body {
+        padding: 30px;
+    }
+
+header,
+main,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+}
+
+/* Media para tabletas */
+@media (min-width: 600px) {
+    body {
+        padding: 30px;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Media para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header,
+    main,
+    footer {
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}

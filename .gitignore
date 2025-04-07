@@ -1,0 +1,2 @@
+# ignora todos los archivos con la extension .css.map
+*.css.map
