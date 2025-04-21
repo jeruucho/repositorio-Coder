@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de arquitectura, en edificios, casas o negocios.">
+    <meta name="keywords" content="servicios de arquitectura, arquitectos en La Plata, dirección de obra, diseño de interiores, paisajismo profesional">
     <title> documento </title>
     <!--libreria*/-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,16 +32,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                                <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
-                            </li>                        
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/preguntas.html">Preguntas</a>
+                                <a class="nav-link " href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/preguntas.html">Preguntas</a>
                             </li>
                         </ul>
                     </div>
@@ -48,11 +53,9 @@
         </nav>
     </header>
     <!--fin del navbar-->
+    <h1 id="titulo">Estudio SVN</h1>
     <main>
-        <h1 class="animate__animated animate__backInDown" id="titulo">Estudio SVN</h1>
-        <div class="animate__animated animate__slideInLeft">
-            <h2 class="encabezados">Arquitectura y Paisajismo </h2>
-        </div>
+        <h2 class="encabezados">Arquitectura y Paisajismo </h2>
         <section>
             <ul ><strong>Quienes Somos?:</strong> Somos un estudio de arquitectura y paisajismo dedicado a crear espacios únicos que combinan diseño, funcionalidad y
             naturaleza. Nosotros trabajamos con pasión para transformar ideas en realidades,
@@ -68,36 +71,38 @@
             siempre con el compromiso de aportar valor estético, confort y eficiencia.<br></ul>
 
             <!--Carousel de Imagenes-->
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div class="animate__animated animate__backInDown">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/interior1.png" class="d-block w-100" alt="Render de interior de casa">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/casaexte1.png" class="d-block w-100" alt="Render de exteriro de casa Villalba">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/casaexte2.png" class="d-block w-100" alt="Render de exteriro de casa Gomez">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/interior1.png" class="d-block w-100" alt="Render de interior de casa">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/casaexte1.png" class="d-block w-100" alt="Render de exteriro de casa Villalba">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/casaexte2.png" class="d-block w-100" alt="Render de exteriro de casa Gomez">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
             <!--fin del carousel-->
 
@@ -112,9 +117,10 @@
                     <li>Entrega y Postventa</li>
                 </ol>
             </ul>
-
-            <div class="container">
-                <img src="./assets/img/edificio.png" alt= "Render de un edificio.">
+            <div class="animate__animated animate__slideInLeft">
+                <div class="container">
+                    <img src="./assets/img/edificio.png" alt= "Render de un edificio.">
+                </div>
             </div>
             <!-- Ubicacion con movimiento en google maps-->
             <ul><strong>Localidad:</strong> Buenos Aires,La Plata, calle 14 entre Av 51 y Av 53</ul>

@@ -1,23 +1,21 @@
-/*edicion del navbar*/
+/* edición del navbar */
 .navbar {
     font-family: 'Playfair Display', serif;
     background-color: rgb(189, 193, 193);
     border-radius: 10px;
 
-}
+    .navbar-brand {
+        font-weight: 500;
+    }
 
-.navbar-brand {
-    font-weight: 500;
+    .nav-link {
+        color: black;
+        font-weight: 500;
 
-}
-
-.nav-link {
-    color: black;
-    font-weight: 500;
-}
-
-.nav-link:hover {
-    color: rgb(94, 197, 47);
+        &:hover {
+            color: rgb(94, 197, 47);
+        }
+    }
 }
 
 .sticky-box {

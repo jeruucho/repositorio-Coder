@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   box-sizing: border-box;
@@ -6,16 +7,14 @@
 body {
   background-color: rgba(223, 221, 221, 0.867);
 }
-
-#titulo {
+body #titulo {
   text-decoration: underline;
   text-align: center;
   margin: 20px;
   color: rgb(0, 0, 0);
   font-family: "Playfair Display", serif;
 }
-
-.encabezados {
+body .encabezados {
   color: rgb(0, 0, 0);
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -24,38 +23,32 @@ body {
   background-color: rgba(95, 197, 47, 0.504);
   margin: 15px;
 }
-
-.redes {
+body .redes {
   margin: 20px;
   font-size: 20px;
   justify-content: space-between;
   color: rgb(61, 131, 28);
 }
-
-ul {
+body ul {
   color: rgb(0, 0, 0);
   font-size: 20px;
   margin: 20px;
   text-align: justify;
   font-family: "Poppins", sans-serif;
 }
-
-strong {
+body strong {
   color: rgb(94, 197, 47);
 }
-
-h3 {
+body h2 {
   text-decoration: underline;
   font-size: 25px;
 }
-
-p {
+body p {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
 }
-
-.container {
+body .container {
   width: 70vw;
   max-width: 1000px;
   min-width: 320px;
@@ -63,35 +56,30 @@ p {
   display: flex;
   justify-content: center;
 }
-
-.proyecto2 {
+body .container .proyecto2 {
   justify-content: space-between;
   height: 250px;
   width: 350px;
 }
-
-iframe {
+body iframe {
   margin-left: 20px;
   width: 100%;
 }
 
-/*edicion del navbar*/
+/* edición del navbar */
 .navbar {
   font-family: "Playfair Display", serif;
   background-color: rgb(189, 193, 193);
   border-radius: 10px;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   font-weight: 500;
 }
-
-.nav-link {
+.navbar .nav-link {
   color: black;
   font-weight: 500;
 }
-
-.nav-link:hover {
+.navbar .nav-link:hover {
   color: rgb(94, 197, 47);
 }
 
@@ -103,92 +91,115 @@ iframe {
   padding: 10px;
 }
 
-/*Media para movil*/
 @media (min-width: 320px) {
   body {
     padding: 30px;
   }
-  header,
-  main,
-  footer {
-    padding: 20px;
-    text-align: center;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  p {
-    font-size: 1.2em;
-  }
 }
-/* Media para tabletas */
 @media (min-width: 600px) {
   body {
     padding: 30px;
   }
-  header,
-  main,
-  footer {
-    padding: 20px;
-    text-align: center;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  p {
-    font-size: 1.2em;
-  }
 }
-/* Media para computadoras de escritorio */
 @media (min-width: 1024px) {
   body {
     max-width: 1200px;
     margin: 0 auto;
   }
-  header,
-  main,
-  footer {
+}
+@media (min-width: 320px) {
+  body header,
+  body main,
+  body footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  body header,
+  body main,
+  body footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  body header,
+  body main,
+  body footer {
     justify-content: space-between;
     padding: 40px;
   }
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
+}
+@media (min-width: 320px) {
+  body h1 {
     font-size: 2em;
   }
-  p {
+}
+@media (min-width: 600px) {
+  body h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  body h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 320px) {
+  body h2 {
     font-size: 1.5em;
   }
 }
-img {
+@media (min-width: 600px) {
+  body h2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  body h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 320px) {
+  body p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 600px) {
+  body p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) {
+  body p {
+    font-size: 1.5em;
+  }
+}
+
+body {
+  /* edición de card de imágenes */
+}
+body img {
   width: 90%;
   border-radius: 15px;
-  box-shadow: 0px 3px 5px rgba 15, 15, 15, 0.5;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
-
-/*edicion de card de imagenes*/
-.card {
+body .imagen2 {
+  width: 60%;
+}
+body .card {
   margin: 5px;
 }
-
-.card-body {
+body .card .card-body {
   background-color: rgba(95, 197, 47, 0.355);
 }
-
-.card-title {
+body .card .card-body .card-title {
   text-decoration: underline;
   text-align: center;
   font-family: "Playfair Display", serif;
 }
-
-.card-text {
+body .card .card-body .card-text {
   text-align: left;
 }
 
