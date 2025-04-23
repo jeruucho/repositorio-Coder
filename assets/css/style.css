@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body .encabezados, body #titulo {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-decoration: underline;
+}
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -8,18 +15,10 @@ body {
   background-color: rgba(223, 221, 221, 0.867);
 }
 body #titulo {
-  text-decoration: underline;
-  text-align: center;
   margin: 20px;
-  color: rgb(0, 0, 0);
-  font-family: "Playfair Display", serif;
 }
 body .encabezados {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-family: "Playfair Display", serif;
   font-size: 25px;
-  text-decoration: underline;
   background-color: rgba(95, 197, 47, 0.504);
   margin: 15px;
 }
@@ -32,9 +31,9 @@ body .redes {
 body ul {
   color: rgb(0, 0, 0);
   font-size: 20px;
-  margin: 20px;
-  text-align: justify;
   font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 20px;
 }
 body strong {
   color: rgb(94, 197, 47);

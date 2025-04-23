@@ -1,46 +1,69 @@
+// Mapa de colores
+$colores: (
+    fondo: rgba(223, 221, 221, 0.867),
+    texto-principal: rgb(0, 0, 0),
+    destacado: rgb(94, 197, 47),
+    fondo-encabezado: rgba(95, 197, 47, 0.504),
+    redes: rgb(61, 131, 28)
+);
+
+// Mixin para textos comunes
+@mixin texto-basico($align: justify, $size: 17px, $font: 'Poppins', $style: sans-serif) {
+    font-size: $size;
+    font-family: $font, $style;
+    text-align: $align;
+}
+
+// Mixin para márgenes
+@mixin margen($valor) {
+    margin: $valor;
+}
+
+// Estilo de encabezado general
+%estilo-encabezado {
+    color: map-get($colores, texto-principal);
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    text-decoration: underline;
+}
+
+// Aplicación de estilos
+
 * {
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgba(223, 221, 221, 0.867);
+    background-color: map-get($colores, fondo);
 
     #titulo {
-        text-decoration: underline;
-        text-align: center;
-        margin: 20px;
-        color: rgb(0, 0, 0);
-        font-family: "Playfair Display", serif;
+        @extend %estilo-encabezado;
+        @include margen(20px);
     }
 
     .encabezados {
-        color: rgb(0, 0, 0);
-        text-align: center;
-        font-family: "Playfair Display", serif;
+        @extend %estilo-encabezado;
         font-size: 25px;
-        text-decoration: underline;
-        background-color: rgba(95, 197, 47, 0.504);
-        margin: 15px;
+        background-color: map-get($colores, fondo-encabezado);
+        @include margen(15px);
     }
 
     .redes {
-        margin: 20px;
+        @include margen(20px);
         font-size: 20px;
         justify-content: space-between;
-        color: rgb(61, 131, 28);
+        color: map-get($colores, redes);
     }
 
     ul {
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        margin: 20px;
-        text-align: justify;
-        font-family: 'Poppins', sans-serif;
+        color: map-get($colores, texto-principal);
+        @include texto-basico(center, 20px);
+        @include margen(20px);
     }
 
     strong {
-        color: rgb(94, 197, 47);
+        color: map-get($colores, destacado);
     }
 
     h2 {
@@ -49,9 +72,7 @@ body {
     }
 
     p {
-        font-size: 17px;
-        font-family: 'Poppins', sans-serif;
-        text-align: justify;
+        @include texto-basico();
     }
 
     .container {
