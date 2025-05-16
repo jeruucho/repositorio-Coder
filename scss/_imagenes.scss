@@ -1,8 +1,8 @@
 body {
-    img {
+    img1 {
         width: 90%;
         border-radius: 15px;
-        box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5); // ojo: corregí el espacio extra en rgba
+        box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5); 
     }
 
     .imagen2 {
@@ -14,7 +14,7 @@ body {
         margin: 5px;
 
         .card-body {
-            background-color: rgba(95, 197, 47, 0.355);
+            background-color: rgba(95,197,47,0.504);
 
             .card-title {
                 text-decoration: underline;

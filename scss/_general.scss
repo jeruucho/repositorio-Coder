@@ -4,7 +4,7 @@ $colores: (
     texto-principal: rgb(0, 0, 0),
     destacado: rgb(94, 197, 47),
     fondo-encabezado: rgba(95, 197, 47, 0.504),
-    redes: rgb(61, 131, 28)
+    redes: rgb(95, 197, 47, 0.504)
 );
 
 // Mixin para textos comunes
@@ -32,6 +32,11 @@ $colores: (
 * {
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 body {
@@ -93,5 +98,22 @@ body {
     iframe {
         margin-left: 20px;
         width: 100%;
+    }
+    
+//boxmodel
+    .texto-imagen {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 20px;
+    
+        p {
+            flex: 1;
+        }
+    
+        img {
+            width: 400px;
+            height: auto;
+        }
     }
 }

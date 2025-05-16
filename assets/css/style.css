@@ -11,6 +11,11 @@ body .encabezados, body #titulo {
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgba(223, 221, 221, 0.867);
 }
@@ -26,7 +31,7 @@ body .redes {
   margin: 20px;
   font-size: 20px;
   justify-content: space-between;
-  color: rgb(61, 131, 28);
+  color: rgba(95, 197, 47, 0.504);
 }
 body ul {
   color: rgb(0, 0, 0);
@@ -63,6 +68,19 @@ body .container .proyecto2 {
 body iframe {
   margin-left: 20px;
   width: 100%;
+}
+body .texto-imagen {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+body .texto-imagen p {
+  flex: 1;
+}
+body .texto-imagen img {
+  width: 400px;
+  height: auto;
 }
 
 /* edición del navbar */
@@ -179,7 +197,7 @@ body iframe {
 body {
   /* edición de card de imágenes */
 }
-body img {
+body img1 {
   width: 90%;
   border-radius: 15px;
   box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
@@ -191,7 +209,7 @@ body .card {
   margin: 5px;
 }
 body .card .card-body {
-  background-color: rgba(95, 197, 47, 0.355);
+  background-color: rgba(95, 197, 47, 0.504);
 }
 body .card .card-body .card-title {
   text-decoration: underline;
